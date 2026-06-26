@@ -1,0 +1,2 @@
+# gentoo-settings
+flags
