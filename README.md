@@ -1,2 +1,2 @@
 # gentoo-settings
-flags
+flags and settings to dwm
