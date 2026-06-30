@@ -2,17 +2,17 @@
 
 /* appearance */
 static const char *browsercmd[] = { "firefox", NULL };
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Jetbrains mono:size=12" };
 static const char dmenufont[]       = "Jetbrains mono:size=12";
-static const char col_bg[]     = "#1a1b26";
-static const char col_fg[]     = "#c0caf5";
-static const char col_accent[] = "#7aa2f7";
-static const char col_muted[]  = "#565f89";
-static const char col_border[] = "#24283b";
+static const char col_bg[]          = "#1a1b26";
+static const char col_fg[]          = "#c0caf5";
+static const char col_accent[]      = "#7aa2f7";
+static const char col_muted[]       = "#565f89";
+static const char col_border[]      = "#24283b";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_fg, col_bg, col_border },
@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
 
 static const Rule rules[] = {
 	/* xprop(1):
