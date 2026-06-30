@@ -6,17 +6,17 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_gray5[]       = "#808080";
+static const char *fonts[]          = { "Jetbrains mono:size=12" };
+static const char dmenufont[]       = "Jetbrains mono:size=12";
+static const char col_bg[]     = "#1a1b26";
+static const char col_fg[]     = "#c0caf5";
+static const char col_accent[] = "#7aa2f7";
+static const char col_muted[]  = "#565f89";
+static const char col_border[] = "#24283b";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray5,  col_gray5  },
+	[SchemeNorm] = { col_fg, col_bg, col_border },
+        [SchemeSel]  = { col_bg, col_accent, col_accent },
 };
 
 /* tagging */
