@@ -1,0 +1,62 @@
+* {
+    border: none;
+    border-radius: 2px;
+    font-family: JetBrains mono;
+    font-size: 11px;
+}
+
+window#waybar {
+    background: rgba(28, 28, 26, 0.85);
+    color: #e8ddc4;
+}
+
+/* Workspace */
+
+#workspaces {
+    margin-left: 6px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 3px;
+    background: #4b463d;
+    color: #ddd4c2;
+}
+
+#workspaces button.active {
+    background: #7d9074;
+    color: black;
+}
+
+#workspaces button:hover {
+    background: #caa85c;
+}
+
+/* Moduły */
+
+#cpu,
+#memory,
+#temperature,
+#clock {
+    margin: 3px;
+    padding: 0 8px;
+}
+
+#cpu {
+    background: #caa85c;
+    color: black;
+}
+
+#memory {
+    background: #d3bf77;
+    color: black;
+}
+
+#temperature {
+    background: #7d9074;
+    color: black;
+}
+
+#clock {
+    background: #353530;
+}
