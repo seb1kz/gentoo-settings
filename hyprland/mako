@@ -4,9 +4,9 @@
 anchor=top-right
 
 # Wygląd
-background-color=#2e3440
-text-color=#d8dee9
-border-color=#88c0d0
+background-color=#141d38
+text-color=#e8ecf7
+border-color=#212f58
 border-size=2
 border-radius=10
 
@@ -24,3 +24,10 @@ sort=-time
 # Włącz ikony i formatowanie
 icons=true
 markup=true
+
+# Pasek postępu (jeśli aplikacja go używa)
+progress-color=over #1d2a4f
+
+# Kolory tekstu dla grup
+summary-color=#ffffff
+body-color=#cfd8ef
