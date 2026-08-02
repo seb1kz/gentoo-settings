@@ -8,19 +8,20 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Jetbrains mono:size=12" };
 static const char dmenufont[]       = "Jetbrains mono:size=12";
-static const char col_bg[]          = "#1a1b26";
-static const char col_fg[]          = "#c0caf5";
-static const char col_accent[]      = "#7aa2f7";
-static const char col_muted[]       = "#565f89";
-static const char col_border[]      = "#24283b";
+static const char col_bg[]          = "#0d0d0d";  // prawie czarne tło
+static const char col_fg[]          = "#e6e6e6";  // jasna biel tekstu
+static const char col_accent[]      = "#ffffff";  // czysty biały akcent
+static const char col_muted[]       = "#666666";  // szary pomocniczy
+static const char col_border[]      = "#2b2b2b";  // subtelna ramka
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_fg, col_bg, col_border },
-        [SchemeSel]  = { col_bg, col_accent, col_accent },
+	[SchemeSel]  = { col_bg, col_accent, col_accent },
 };
 
 /* tagging */
-static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -60,7 +61,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
