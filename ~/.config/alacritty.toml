@@ -1,0 +1,34 @@
+[font]
+size = 10.0
+
+[window]
+opacity = 0.85
+padding = { x = 12, y = 12 }
+
+[colors.primary]
+background = "#101010"
+foreground = "#d0d0d0"
+
+[colors.cursor]
+text = "#101010"
+cursor = "#d0d0d0"
+
+[colors.normal]
+black = "#101010"
+red = "#888888"
+green = "#aaaaaa"
+yellow = "#777777"
+blue = "#999999"
+magenta = "#888888"
+cyan = "#aaaaaa"
+white = "#d0d0d0"
+
+[colors.bright]
+black = "#555555"
+red = "#aaaaaa"
+green = "#cccccc"
+yellow = "#bbbbbb"
+blue = "#bbbbbb"
+magenta = "#aaaaaa"
+cyan = "#cccccc"
+white = "#ffffff"
