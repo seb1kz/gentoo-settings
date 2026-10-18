@@ -8,7 +8,7 @@ sleep 1
 pipewire-pulse &
 slstatus &
 xrandr --output HDMI-A-2 --mode 1920x1080 --rate 239.88 &
-xinput set-prop "SteelSeries SteelSeries Prime Wireless" "libinput Accel Speed" 0
-xinput set-prop "SteelSeries SteelSeries Prime Wireless" "libinput Accel Profile Enabled" 1 0
+xinput set-prop 6 "libinput Accel Profile Enabled" 0 1 0
+xinput set-prop 6 "libinput Accel Speed" -0.30
 exec dbus-run-session dwm
 
