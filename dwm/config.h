@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicShannsMonoNerdFontMono-Bold:size=12" };
 static const char dmenufont[]       = "ComicShannsMonoNerdFontMono-Bold:size=12";
-static const char col_bg[]         = "#0a0a0a";  // deep black background
-static const char col_fg[]         = "#b0b0b0";  // soft light gray text
-static const char col_accent[]     = "#f0f0f0";  // bright white/light gray accent
-static const char col_muted[]      = "#444444";  // dark muted gray
-static const char col_border[]     = "#222222";  // dark gray border
+static const char col_bg[]         = "#0d0b12";  // dark black-purple background
+static const char col_fg[]         = "#d1c7e0";  // light lavender text
+static const char col_accent[]     = "#9a48e5";  // vibrant purple accent
+static const char col_muted[]      = "#584d66";  // muted purple-gray
+static const char col_border[]     = "#272030";  // dark purple-gray border
 
 static const char *colors[][3]     = {
     /*                  fg         bg         border   */
