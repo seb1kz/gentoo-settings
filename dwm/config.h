@@ -1,23 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *browsercmd[] = { "firefox", NULL };
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const char *browsercmd[] = { "librewolf", NULL };
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Jetbrains mono:size=12" };
-static const char dmenufont[]       = "Jetbrains mono:size=12";
-static const char col_bg[]          = "#0d0d0d";  // prawie czarne tło
-static const char col_fg[]          = "#e6e6e6";  // jasna biel tekstu
-static const char col_accent[]      = "#ffffff";  // czysty biały akcent
-static const char col_muted[]       = "#666666";  // szary pomocniczy
-static const char col_border[]      = "#2b2b2b";  // subtelna ramka
+static const char *fonts[]          = { "ComicShannsMonoNerdFontMono-Bold:size=12" };
+static const char dmenufont[]       = "ComicShannsMonoNerdFontMono-Bold:size=12";
+static const char col_bg[]         = "#0a0a0a";  // deep black background
+static const char col_fg[]         = "#b0b0b0";  // soft light gray text
+static const char col_accent[]     = "#f0f0f0";  // bright white/light gray accent
+static const char col_muted[]      = "#444444";  // dark muted gray
+static const char col_border[]     = "#222222";  // dark gray border
 
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_fg, col_bg, col_border },
-	[SchemeSel]  = { col_bg, col_accent, col_accent },
+static const char *colors[][3]     = {
+    /*                  fg         bg         border   */
+    [SchemeNorm] = { col_fg, col_bg, col_border },
+    [SchemeSel]  = { col_bg, col_accent, col_accent },
 };
 
 /* tagging */
@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	*/
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "librewolf",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
