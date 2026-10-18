@@ -2,17 +2,17 @@
 
 /* appearance */
 static const char *browsercmd[] = { "librewolf", NULL };
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "ComicShannsMonoNerdFontMono-Bold:size=12" };
-static const char dmenufont[]       = "ComicShannsMonoNerdFontMono-Bold:size=12";
-static const char col_bg[]         = "#0d0b12";  // dark black-purple background
-static const char col_fg[]         = "#d1c7e0";  // light lavender text
-static const char col_accent[]     = "#9a48e5";  // vibrant purple accent
-static const char col_muted[]      = "#584d66";  // muted purple-gray
-static const char col_border[]     = "#272030";  // dark purple-gray border
+static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
+static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
+static const char col_bg[]         = "#0b0714";  // very dark purple-black background
+static const char col_fg[]         = "#bbaad6";  // muted light purple text
+static const char col_accent[]     = "#6a1b9a";  // deep dark purple accent
+static const char col_muted[]      = "#453259";  // muted dark purple
+static const char col_border[]     = "#211533";  // dark purple border
 
 static const char *colors[][3]     = {
     /*                  fg         bg         border   */
@@ -30,7 +30,7 @@ static const Rule rules[] = {
 	*/
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "librewolf",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "librewolf",  NULL,       NULL,       1 << 0,       0,           -1 },
 };
 
 /* layout(s) */
