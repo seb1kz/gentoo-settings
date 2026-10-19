@@ -35,4 +35,5 @@ window#waybar {
 #clock {
     color: #ffffff;
     font-weight: bold;
+    margin-left: 3px;
 }
