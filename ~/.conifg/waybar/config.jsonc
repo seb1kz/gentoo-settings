@@ -1,0 +1,22 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+
+    "modules-left": [],
+    "modules-center": [],
+
+    "modules-right": [
+        "temperature",
+        "clock"
+    ],
+
+    "temperature": {
+        "thermal-zone": 0,
+        "format": " {temperatureC}°"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}"
+    }
+}
