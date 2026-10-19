@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
-static const char col_bg[]         = "#0b0714";  // very dark purple-black background
-static const char col_fg[]         = "#bbaad6";  // muted light purple text
-static const char col_accent[]     = "#6a1b9a";  // deep dark purple accent
-static const char col_muted[]      = "#453259";  // muted dark purple
-static const char col_border[]     = "#211533";  // dark purple border
+static const char col_bg[]         = "#101010";  // tło z alacritty
+static const char col_fg[]         = "#d0d0d0";  // tekst z alacritty
+static const char col_accent[]     = "#ffffff";  // jasny biały akcent (bright white)
+static const char col_muted[]      = "#555555";  // szary pomocniczy (bright black)
+static const char col_border[]     = "#555555";  // ramka
 
 static const char *colors[][3]     = {
     /*                  fg         bg         border   */
@@ -77,7 +77,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_p, zoom,           {0} },
-	{ ALT,                          XK_Tab,    view,           {0} },
+	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
