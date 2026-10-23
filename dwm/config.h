@@ -1,23 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *browsercmd[] = { "librewolf", NULL };
+static const char *browsercmd[] = { "firefox", NULL };
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int snap      = 60;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
-static const char col_bg[]         = "#101010";  // tło z alacritty
-static const char col_fg[]         = "#d0d0d0";  // tekst z alacritty
-static const char col_accent[]     = "#ffffff";  // jasny biały akcent (bright white)
-static const char col_muted[]      = "#555555";  // szary pomocniczy (bright black)
-static const char col_border[]     = "#555555";  // ramka
+/* dwm colors - GitHub Dark & Dark Purple Theme */
+static const char col_bg[]          = "#0d1117"; /* tło GitHub Dark */
+static const char col_fg[]          = "#c9d1d9"; /* tekst / jasnoszary */
+static const char col_border_norm[] = "#30363d"; /* ramka nieaktywna / ciemnoszara */
+static const char col_purple[]      = "#8957e5"; /* akcent / ciemny fiolet */
 
-static const char *colors[][3]     = {
-    /*                  fg         bg         border   */
-    [SchemeNorm] = { col_fg, col_bg, col_border },
-    [SchemeSel]  = { col_bg, col_accent, col_accent },
+static const char *colors[][3]      = {
+	/*               fg          bg           border   */
+	[SchemeNorm] = { col_fg,     col_bg,      col_border_norm },
+	[SchemeSel]  = { "#ffffff",  col_purple,  col_purple },
 };
 
 /* tagging */
