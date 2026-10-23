@@ -3,7 +3,7 @@
     "position": "top",
     "height": 24,
 
-    "modules-left": [mango/workspaces", "mango/layout", "mango/window],
+    "modules-left": ["mango/workspaces", "mango/layout", "mango/window"],
     "modules-center": [],
 
     "modules-right": [
