@@ -1,151 +1,222 @@
+configuration {
+    modes:              "drun";
+    sorting-method:     "normal";
+    show-icons:         true;
+    terminal:           "kitty";
+    editor:             "micro";
+    matching:           "regex";
+    drun-match-fields:  "name";
+    /*display-run:        "Window:";
+    display-ssh:        " SSH:";
+    display-drun:       "󰀻 Apps:";
+        display-emoji:		"󱃞 Emoji";
+        */
+     kb-move-char-forward: "Right";
+    kb-move-char-back: "Left";
+    kb-mode-next: "Alt+Right";
+    window-format: "{n} {t}";
+    kb-mode-previous: "Alt+Left";
+    drun-display-format: "{name}";
+    fixed-height: true;
+   }
+
+@theme "storm"
+
+/* ── Palette ──────────────────────────────────────────────────────────── */
 * {
-    selected-normal-foreground:  rgba(125, 207, 255, 1);     /* blue highlight */
-    foreground:                  rgba(224, 234, 252, 1);     /* bright */
-    normal-foreground:           @foreground;
-    alternate-normal-background: rgba(36, 40, 59, 1);        /* #24283b */
-    red:                         rgba(247, 118, 142, 1);     /* #f7768e */
-    selected-urgent-foreground:  rgba(125, 207, 255, 1);     /* bright blue */
-    blue:                        rgba(125, 207, 255, 1);     /* #7dcfff */
-    urgent-foreground:           rgba(247, 118, 142, 1);     /* #f7768e */
-    alternate-urgent-background: rgba(36, 40, 59, 1);        /* #24283b */
-    active-foreground:           rgba(125, 207, 255, 1);     /* blue */
-    lightbg:                     rgba(217, 222, 239, 1);
-    selected-active-foreground:  rgba(125, 207, 255, 1);
-    alternate-active-background: rgba(36, 40, 59, 1);
-    background:                  rgba(26, 27, 38, 0.93);     /* #1a1b26 */
-    bordercolor:                 rgba(125, 207, 255, 1);     /* #7dcfff */
-    alternate-normal-foreground: @foreground;
-    normal-background:           rgba(36, 40, 59, 0.06);
-    lightfg:                     rgba(200, 210, 255, 1);     /* bright dim text */
-    selected-normal-background:  rgba(65, 72, 104, 1);       /* #414868 */
-    border-color:                @bordercolor;
-    spacing:                     2;
-    separatorcolor:              rgba(65, 72, 104, 1);
-    urgent-background:           rgba(26, 27, 38, 1);        /* #1a1b26 */
-    selected-urgent-background:  rgba(247, 118, 142, 1);
-    alternate-urgent-foreground: @urgent-foreground;
-    background-color:            rgba(0, 0, 0, 0);
-    alternate-active-foreground: @active-foreground;
-    active-background:           rgba(26, 27, 38, 1);
-    selected-active-background:  rgba(65, 72, 104, 1);       /* #414868 */
+    bg0:     #141319;   /* bg_dark */
+    bg1:     #232236;   /* bg */
+    bg2:     #302f4d;   /* bg_highlight */
+    bg3:     #5b547e;   /* dark3 */
+    fg0:     #d3c8f5;   /* fg */
+    fg1:     #8f82b8;   /* fg_dark */
+    fg2:     #7b73a2;   /* dark5 */
+    red:     #ff757f;
+    green:   #c3e88d;
+    yellow:  #ffc777;
+    blue:    #82aaff;
+    magenta: #c099ff;
+    cyan:    #86e1fc;
+    purple:  #fca7ea;
+
+    accent:  @blue;
+    urgent:  @yellow;
+
+    background-color: transparent;
+    text-color:       @fg0;
 }
 
+/* ── Window ───────────────────────────────────────────────────────────── */
 window {
-    background-color: @background;
-    border:           2;
-		border-radius:		8px;
-    padding:          5;
-		width:						20%;
-		height:						20%;
+    width:            500px;
+    background-color: @bg0;
+    border:           1px;
+    border-color:     @fg2;
+    border-radius:    0px;
+    padding:          0;
 }
+
+// /* ── Main box ─────────────────────────────────────────────────────────── */
+// mainbox {
+//     background-color: transparent;
+//     orientation:      horizontal;
+//     children:         [ imagebox, listbox ];
+//     spacing:          0;
+//     padding:          0;
+// }
+//
+// imagebox {
+//     padding:          12px;
+//     spacing:          10px;
+//     orientation:      vertical;
+//     background-color: transparent;
+//     background-image: url("~/pics/walls/1.png", height);
+//     children:         [ inputbar, dummy, message ];
+//     width:            200px;
+// }
+//
+// dummy {
+//     background-color: transparent;
+// }
+
+listbox {
+    padding:          12px;
+    spacing:          0;
+    background-color: transparent;
+    children:         [ listview ];
+}
+
+/* ── Main box ─────────────────────────────────────────────────────────── */
 mainbox {
-    border:  0;
-    padding: 0;
+    background-color: transparent;
+    children:         [ inputbar, message, listview ];
+    spacing:          0;
+    padding:          12px;
 }
-message {
-    border:       2px 0px 0px ;
-    border-color: @separatorcolor;
-    padding:      1px ;
-}
-textbox {
-    text-color: @foreground;
-}
-listview {
-    fixed-height: 0;
-    border:       2px 0px 0px ;
-    border-color: @separatorcolor;
-    spacing:      2px ;
-    scrollbar:    true;
-    padding:      2px 0px 0px ;
-}
-element {
-    border:  0;
-    padding: 1px ;
-}
-element-text {
-    background-color: inherit;
-    text-color:       inherit;
-}
-element.normal.normal {
-    background-color: @normal-background;
-    text-color:       @normal-foreground;
-}
-element.normal.urgent {
-    background-color: @urgent-background;
-    text-color:       @urgent-foreground;
-}
-element.normal.active {
-    background-color: @active-background;
-    text-color:       @active-foreground;
-}
-element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
-element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color:       @selected-urgent-foreground;
-}
-element.selected.active {
-    background-color: @selected-active-background;
-    text-color:       @selected-active-foreground;
-}
-element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
-}
-element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color:       @alternate-urgent-foreground;
-}
-element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color:       @alternate-active-foreground;
-}
-scrollbar {
-    width:        4px ;
-    border:       0;
-    handle-width: 8px ;
-    padding:      0;
-}
-mode-switcher {
-    border:       2px 0px 0px ;
-    border-color: @separatorcolor;
-}
-button.selected {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
+
+/* ── Input bar ────────────────────────────────────────────────────────── */
 inputbar {
-    spacing:    0;
-    text-color: @normal-foreground;
-    padding:    1px ;
+    background-color: @bg0;
+    padding:          1px 10px;
+    margin:           0 0 10px 0;
+    children:         [ prompt, entry ];
+    spacing:          6px;
 }
-case-indicator {
-    spacing:    0;
-    text-color: @normal-foreground;
-}
-entry {
-    spacing:    0;
-    text-color: @normal-foreground;
-}
+
 prompt {
-    spacing:    0;
-    text-color: @normal-foreground;
+    background-color: transparent;
+    text-color:       @accent;
+    font:             "Iosevka Nerd Font 20";
 }
-inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+
+entry {
+    background-color: transparent;
+    text-color:       @fg0;
+    placeholder:      "";
+    placeholder-color: @fg2;
+    font:             "Iosevka Nerd Font 20";
+    cursor:           text;
 }
-textbox-prompt-colon {
-    expand:     false;
-    str:        ":";
-    margin:     0px 0.3em 0em 0em ;
-    text-color: @normal-foreground;
+
+
+
+button {
+    background-color: @bg2;
+    text-color:       @fg0;
+    border-radius:    1px;
+    cursor:           pointer;
 }
+
+button selected {
+    background-color: @accent;
+    text-color:       @bg0;
+}
+
+/* ── List view ────────────────────────────────────────────────────────── */
+listview {
+    background-color: transparent;
+    columns:          1;
+    lines:            5;
+    spacing:          4px;
+    fixed-height:     false;
+}
+
 scrollbar {
-    width:        4px;
-    border:       0;
-    handle-width: 8px;
-    padding:      0;
-    handle-color: rgba(125, 207, 255, 0.8);  /* bright blue scrollbar handle */
+    width:            4px;
+    handle-width:     4px;
+    background-color: @bg2;
+    handle-color:     @accent;
+    border-radius:    0px;
+}
+
+/* ── List elements ────────────────────────────────────────────────────── */
+element {
+    background-color: transparent;
+    text-color:       @fg0;
+    border-radius:    0px;
+    padding:          8px 10px;
+    spacing:          8px;
+    orientation:      horizontal;
+    cursor:           pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg0;
+}
+
+element normal.urgent {
+    background-color: transparent;
+    text-color:       @urgent;
+}
+
+element normal.active {
+    background-color: transparent;
+    text-color:       @cyan;
+}
+
+element selected.normal {
+    background-color: @fg1;
+    text-color:       @bg0;
+    border-color:     @accent;
+}
+
+element selected.urgent {
+    background-color: @bg3;
+    text-color:       @urgent;
+    border-color:     @urgent;
+}
+
+element selected.active {
+    background-color: @bg3;
+    text-color:       @cyan;
+    border-color:     @cyan;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             24px;
+    cursor:           inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    cursor:           inherit;
+    vertical-align:   0.5;
+    font:             "ComicShannsMono Nerd Font 12";
+}
+
+/* ── Message ──────────────────────────────────────────────────────────── */
+message {
+    background-color: @bg2;
+    border-radius:    0px;
+    padding:          8px 12px;
+    margin:           0 0 10px 0;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @fg2;
+    font:             "Iosevka Nerd Font 20";
 }
