@@ -4,37 +4,38 @@ size = 13.0
 [font.bold]
 family = "ComicShannsMono Nerd Font"
 
+[window]
+# Lekka przezroczystość ładnie zmiesza terminal z tapetą w tle
+opacity = 0.88
+blur = true
+
 [colors.primary]
-background = "#0d1117"
-foreground = "#c9d1d9"
+background = '0x1e1c2a' # Głęboki granatowy zachód słońca
+foreground = '0xf8e8de' # Ciepły, piaszczysty biały
 
 [colors.cursor]
-text = "#0d1117"
-cursor = "#a371f7"
-
-[colors.selection]
-text = "#ffffff"
-background = "#8957e5"
+text = '0x1e1c2a'
+cursor = '0xf4a261'
 
 [colors.normal]
-black   = "#484f58"
-red     = "#ff7b72"
-green   = "#3fb950"
-yellow  = "#d29922"
-blue    = "#8957e5"
-magenta = "#bc8cff"
-cyan    = "#39c5cf"
-white   = "#b1bac4"
+black   = '0x222436'
+red     = '0xe76f51' # Pomarańczowy/czerwień góry
+green   = '0x2a9d8f'
+yellow  = '0xe9c46a' # Złociste światło słońca
+blue    = '0x61a5c2' # Błękit nieba
+magenta = '0xc77dff' # Różowo-fioletowe chmury
+cyan    = '0x8ecae6'
+white   = '0xe0e1dd'
 
 [colors.bright]
-black   = "#6e7681"
-red     = "#ffa198"
-green   = "#56d364"
-yellow  = "#e3b341"
-blue    = "#a371f7"
-magenta = "#d2a8ff"
-cyan    = "#56d4dd"
-white   = "#f0f6fc"
+black   = '0x444b6e'
+red     = '0xf4a261'
+green   = '0x48cae4'
+yellow  = '0xffd166'
+blue    = '0x90e0ef'
+magenta = '0xe0aaff'
+cyan    = '0xbde0fe'
+white   = '0xffffff'
 
 [terminal.shell]
 program = "/bin/zsh"
