@@ -38,4 +38,4 @@ cyan    = '0xbde0fe'
 white   = '0xffffff'
 
 [terminal.shell]
-program = "/bin/zsh"
+program = "/bin/mksh"
