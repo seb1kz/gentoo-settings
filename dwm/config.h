@@ -8,16 +8,17 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
-/* dwm colors - GitHub Dark & Dark Purple Theme */
-static const char col_bg[]          = "#0d1117"; /* tło GitHub Dark */
-static const char col_fg[]          = "#c9d1d9"; /* tekst / jasnoszary */
-static const char col_border_norm[] = "#30363d"; /* ramka nieaktywna / ciemnoszara */
-static const char col_purple[]      = "#8957e5"; /* akcent / ciemny fiolet */
+static const char col_bg0[]       = "#131620"; /* Głębokie niebiesko-ciemne tło */
+static const char col_bg1[]       = "#1c2233"; /* Tło nieaktywnego paska/okna */
+static const char col_bg2[]       = "#27324d"; /* Akcent / tło zaznaczonego ramki/okna */
+static const char col_fg0[]       = "#cbe0ff"; /* Główny jasny tekst */
+static const char col_blue[]      = "#82aaff"; /* Błękitny akcent */
+static const char col_fg2[]       = "#6c8ebf"; /* Przygaszony tekst */
 
-static const char *colors[][3]      = {
-	/*               fg          bg           border   */
-	[SchemeNorm] = { col_fg,     col_bg,      col_border_norm },
-	[SchemeSel]  = { "#ffffff",  col_purple,  col_purple },
+static const char *colors[][3]    = {
+	/*               fg        bg       border   */
+	[SchemeNorm] = { col_fg0,  col_bg0, col_bg1 },  /* Nieaktywne okna i tagi */
+	[SchemeSel]  = { col_fg0,  col_bg2, col_blue }, /* Aktywne okno i zaznaczony tag */
 };
 
 /* tagging */
