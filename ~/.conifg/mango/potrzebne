@@ -7,3 +7,4 @@ Desktop Portal - xdg-desktop-portal, xdg-desktop-portal-wlr, xdg-desktop-portal-
 Monitor - wlr-randr
 screenshoty - grim,slurp lub flameshot
 font - ComicShannsMonoNerdFontMono-Bold
+shell - mksh
