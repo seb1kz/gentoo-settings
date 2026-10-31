@@ -10,7 +10,7 @@ static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
 static const char col_bg0[]       = "#282a36"; /* Tło główne (Dracula Background) */
 static const char col_bg1[]       = "#44475a"; /* Tło nieaktywne / ramka nieaktywna (Current Line / Selection) */
-static const char col_bg2[]       = "#6272a4"; /* Tło aktywnego tagu/elementu (Comment / Dark Purple Accent) */
+static const char col_bg2[]       = "#282a36"; /* Tło aktywnego tagu/elementu (Comment / Dark Purple Accent) */
 static const char col_fg0[]       = "#f8f8f2"; /* Główny jasny tekst (Dracula Foreground) */
 static const char col_blue[]      = "#bd93f9"; /* Akcent fioletowy - ramka aktywnego okna (Purple) */
 static const char col_fg2[]       = "#6272a4"; /* Przygaszony tekst (Comment) */
