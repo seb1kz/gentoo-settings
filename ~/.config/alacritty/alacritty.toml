@@ -10,31 +10,31 @@ opacity = 0.88
 blur = true
 
 [colors.primary]
-background = '0x1e1c2a' # Głęboki granatowy zachód słońca
-foreground = '0xf8e8de' # Ciepły, piaszczysty biały
+background = '0x282a36'
+foreground = '0xf8f8f2'
 
 [colors.cursor]
-text = '0x1e1c2a'
-cursor = '0xf4a261'
+text = '0x282a36'
+cursor = '0xf8f8f2'
 
 [colors.normal]
-black   = '0x222436'
-red     = '0xe76f51' # Pomarańczowy/czerwień góry
-green   = '0x2a9d8f'
-yellow  = '0xe9c46a' # Złociste światło słońca
-blue    = '0x61a5c2' # Błękit nieba
-magenta = '0xc77dff' # Różowo-fioletowe chmury
-cyan    = '0x8ecae6'
-white   = '0xe0e1dd'
+black   = '0x21222c'
+red     = '0xff5555'
+green   = '0x50fa7b'
+yellow  = '0xf1fa8c'
+blue    = '0xbd93f9'
+magenta = '0xff79c6'
+cyan    = '0x8be9fd'
+white   = '0xf8f8f2'
 
 [colors.bright]
-black   = '0x444b6e'
-red     = '0xf4a261'
-green   = '0x48cae4'
-yellow  = '0xffd166'
-blue    = '0x90e0ef'
-magenta = '0xe0aaff'
-cyan    = '0xbde0fe'
+black   = '0x6272a4'
+red     = '0xff6e6e'
+green   = '0x69ff94'
+yellow  = '0xffffa5'
+blue    = '0xd6acff'
+magenta = '0xff92d0'
+cyan    = '0xa4ffff'
 white   = '0xffffff'
 
 [terminal.shell]
