@@ -8,17 +8,17 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "ComicShannsMono Nerd Font:size=12" };
 static const char dmenufont[]       = "ComicShannsMono Nerd Font:size=12";
-static const char col_bg0[]       = "#131620"; /* Głębokie niebiesko-ciemne tło */
-static const char col_bg1[]       = "#1c2233"; /* Tło nieaktywnego paska/okna */
-static const char col_bg2[]       = "#27324d"; /* Akcent / tło zaznaczonego ramki/okna */
-static const char col_fg0[]       = "#cbe0ff"; /* Główny jasny tekst */
-static const char col_blue[]      = "#82aaff"; /* Błękitny akcent */
-static const char col_fg2[]       = "#6c8ebf"; /* Przygaszony tekst */
+static const char col_bg0[]       = "#282a36"; /* Tło główne (Dracula Background) */
+static const char col_bg1[]       = "#44475a"; /* Tło nieaktywne / ramka nieaktywna (Current Line / Selection) */
+static const char col_bg2[]       = "#6272a4"; /* Tło aktywnego tagu/elementu (Comment / Dark Purple Accent) */
+static const char col_fg0[]       = "#f8f8f2"; /* Główny jasny tekst (Dracula Foreground) */
+static const char col_blue[]      = "#bd93f9"; /* Akcent fioletowy - ramka aktywnego okna (Purple) */
+static const char col_fg2[]       = "#6272a4"; /* Przygaszony tekst (Comment) */
 
 static const char *colors[][3]    = {
-	/*               fg        bg       border   */
-	[SchemeNorm] = { col_fg0,  col_bg0, col_bg1 },  /* Nieaktywne okna i tagi */
-	[SchemeSel]  = { col_fg0,  col_bg2, col_blue }, /* Aktywne okno i zaznaczony tag */
+    /*               fg         bg         border   */
+    [SchemeNorm] = { col_fg0,   col_bg0, col_bg1 },  /* Nieaktywne okna i tagi */
+    [SchemeSel]  = { col_fg0,   col_bg2, col_blue }, /* Aktywne okno i zaznaczony tag */
 };
 
 /* tagging */
