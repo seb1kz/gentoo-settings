@@ -7,7 +7,9 @@ wireplumber &
 sleep 1
 pipewire-pulse &
 slstatus &
-xrandr --output HDMI-1 --mode 1920x1080 --rate 240.00 &
-xinput set-prop 6 "libinput Accel Profile Enabled" 0 1 0
-xinput set-prop 6 "libinput Accel Speed" -0.50
+xrandr --output DP-0 --mode 1920x1080 --rate 319.98 &
+for id in $(xinput list | grep "SteelSeries SteelSeries Aerox 3 Wireless" | grep "pointer" | sed 's/.*id=\([0-9]*\).*/\1/'); do
+    xinput set-prop "$id" "libinput Accel Profile Enabled" 0 1 0
+    xinput set-prop "$id" "libinput Accel Speed" -0.50
+done
 exec dbus-run-session dwm
