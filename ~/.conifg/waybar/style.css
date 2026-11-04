@@ -5,35 +5,35 @@
 }
 
 window#waybar {
-    background-color: #101010;
-    color: #d0d0d0;
-    border-bottom: 2px solid #555555;
-    opacity: 0.85;
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-bottom: 2px solid #6272a4;
+    opacity: 0.95;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #555555;
+    color: #6272a4;
 }
 
 #workspaces button.focused {
-    background-color: #555555;
-    color: #ffffff;
+    background-color: #44475a;
+    color: #50fa7b;
 }
 
 #workspaces button.urgent {
-    background-color: #888888;
-    color: #101010;
+    background-color: #ff5555;
+    color: #f8f8f2;
 }
 
 #temperature {
-    color: #ffffff;
+    color: #ff79c6;
     font-weight: bold;
 }
 
 #clock {
-    color: #ffffff;
+    color: #8be9fd;
     font-weight: bold;
     margin-left: 8px;
 }
