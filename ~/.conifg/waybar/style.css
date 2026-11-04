@@ -1,6 +1,6 @@
 * {
     font-family: "ComicShannsMono Nerd Font";
-    font-size: 13px;
+    font-size: 14px;
     min-height: 0;
 }
 
@@ -14,40 +14,47 @@ window#waybar {
 
 #workspaces {
     background-color: transparent;
-    margin: 2px 4px;
+    margin: 3px 4px;
 }
 
 #workspaces button {
-    padding: 0 8px;
-    margin: 0 2px;
-    background-color: #44475a;  /* Wyraźne tło dla nieaktywnych pulpitów */
-    color: #f8f8f2;             /* Jasny, czytelny tekst */
+    padding: 2px 10px;
+    margin: 0 3px;
+    background-color: #44475a;  /* Tło nieaktywnego pulpitu */
+    color: #f8f8f2;
+    border-radius: 4px;
 }
 
-/* Aktywny pulpit (obsługa klas .active oraz .focused) */
 #workspaces button.active,
 #workspaces button.focused {
-    background-color: #bd93f9;  /* Jasny fiolet Dracula dla aktywnego pulpitu */
-    color: #282a36;             /* Ciemny tekst dla wysokiego kontrastu */
+    background-color: #bd93f9;  /* Jasny fiolet Dracula */
+    color: #282a36;
     font-weight: bold;
 }
 
-/* Pulpit wymagający uwagi / powiadomienie */
 #workspaces button.urgent {
     background-color: #ff5555;  /* Czerwony Dracula */
     color: #f8f8f2;
 }
 
-/* --- Pozostałe moduły --- */
-
-#temperature {
-    color: #ff79c6;
-    font-weight: bold;
-    margin-right: 8px;
-}
+/* --- Sekcja środkowa --- */
 
 #clock {
-    color: #8be9fd;
+    color: #8be9fd;             /* Cyjan Dracula */
     font-weight: bold;
-    margin-left: 8px;
+    font-size: 15px;
+}
+
+/* --- Sekcja prawa --- */
+
+#temperature {
+    color: #ff79c6;             /* Różowy Dracula */
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+#memory {
+    color: #50fa7b;             /* Zielony Dracula */
+    font-weight: bold;
+    margin-right: 8px;
 }
