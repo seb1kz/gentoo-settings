@@ -5,7 +5,7 @@ aplikacje - rofi
 powiadomienia - mako
 Desktop Portal - xdg-desktop-portal, xdg-desktop-portal-wlr, xdg-desktop-portal-gtk
 Monitor - wlr-randr
-screenshoty - grim,slurp lub flameshot
+screenshoty - grim,slurp,swappy lub flameshot
 font - ComicShannsMonoNerdFontMono-Bold
 shell - mksh
 file manager - dolphin
