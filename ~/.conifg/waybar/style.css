@@ -1,13 +1,12 @@
 * {
     font-family: "ComicShannsMono Nerd Font";
-    font-size: 12px;
+    font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
     background-color: #282a36;
     color: #f8f8f2;
-    border-bottom: 2px solid #6272a4;
     opacity: 0.95;
 }
 
@@ -23,8 +22,6 @@ window#waybar {
     margin: 0 2px;
     background-color: #44475a;  /* Wyraźne tło dla nieaktywnych pulpitów */
     color: #f8f8f2;             /* Jasny, czytelny tekst */
-    border-radius: 3px;
-    border: 1px solid #6272a4;  /* Delikatna obramówka, żeby nie wtapiały się w tło */
 }
 
 /* Aktywny pulpit (obsługa klas .active oraz .focused) */
@@ -33,7 +30,6 @@ window#waybar {
     background-color: #bd93f9;  /* Jasny fiolet Dracula dla aktywnego pulpitu */
     color: #282a36;             /* Ciemny tekst dla wysokiego kontrastu */
     font-weight: bold;
-    border-color: #ff79c6;
 }
 
 /* Pulpit wymagający uwagi / powiadomienie */
