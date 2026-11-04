@@ -17,25 +17,25 @@ configuration {
 
 @theme "storm"
 
-/* ── Palette (Niebieska wersja) ───────────────────────────────────────── */
+/* ── Palette (Dracula Theme) ───────────────────────────────────────────── */
 * {
-    bg0:     #131620;   /* Głębokie niebiesko-ciemne tło */
-    bg1:     #1c2233;   /* Tło elementu */
-    bg2:     #27324d;   /* Podświetlenie / tło akcentu */
-    bg3:     #3b4d75;   /* Ciemny niebieski / selection active */
-    fg0:     #cbe0ff;   /* Główny jasny niebiesko-biały tekst */
-    fg1:     #8ab4f8;   /* Zaznaczony tekst (niebieski akcent) */
-    fg2:     #6c8ebf;   /* Przygaszony niebieski tekst */
-    red:     #ff757f;
-    green:   #c3e88d;
-    yellow:  #ffc777;
-    blue:    #82aaff;
-    magenta: #82aaff;   /* Zamieniono fiolet na błękit */
-    cyan:    #86e1fc;
-    purple:  #89b4fa;   /* Zamieniono fiolet na błękit */
+    bg0:       #282a36;   /* Dracula Background */
+    bg1:       #383a59;   /* Tło elementu */
+    bg2:       #44475a;   /* Dracula Selection / tło akcentu */
+    bg3:       #6272a4;   /* Dracula Comment / active selection */
+    fg0:       #f8f8f2;   /* Dracula Foreground (główny jasny tekst) */
+    fg1:       #50fa7b;   /* Zaznaczony tekst (Dracula Green) */
+    fg2:       #6272a4;   /* Przygaszony tekst */
+    red:       #ff5555;
+    green:     #50fa7b;
+    yellow:    #f1fa8c;
+    blue:      #8be9fd;
+    magenta:   #ff79c6;
+    cyan:      #8be9fd;
+    purple:    #bd93f9;   /* Dracula Purple */
 
-    accent:  @blue;
-    urgent:  @yellow;
+    accent:    @purple;
+    urgent:    @yellow;
 
     background-color: transparent;
     text-color:       @fg0;
@@ -146,8 +146,8 @@ element normal.active {
 }
 
 element selected.normal {
-    background-color: @fg1;
-    text-color:         @bg0;
+    background-color: @bg2;
+    text-color:         @fg1;
     border-color:       @accent;
 }
 
