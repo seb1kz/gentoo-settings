@@ -11,25 +11,43 @@ window#waybar {
     opacity: 0.95;
 }
 
-#workspaces button {
-    padding: 0 5px;
+/* --- Sekcja obszarów roboczych (Workspaces) --- */
+
+#workspaces {
     background-color: transparent;
-    color: #6272a4;
+    margin: 2px 4px;
 }
 
+#workspaces button {
+    padding: 0 8px;
+    margin: 0 2px;
+    background-color: #44475a;  /* Wyraźne tło dla nieaktywnych pulpitów */
+    color: #f8f8f2;             /* Jasny, czytelny tekst */
+    border-radius: 3px;
+    border: 1px solid #6272a4;  /* Delikatna obramówka, żeby nie wtapiały się w tło */
+}
+
+/* Aktywny pulpit (obsługa klas .active oraz .focused) */
+#workspaces button.active,
 #workspaces button.focused {
-    background-color: #44475a;
-    color: #50fa7b;
+    background-color: #bd93f9;  /* Jasny fiolet Dracula dla aktywnego pulpitu */
+    color: #282a36;             /* Ciemny tekst dla wysokiego kontrastu */
+    font-weight: bold;
+    border-color: #ff79c6;
 }
 
+/* Pulpit wymagający uwagi / powiadomienie */
 #workspaces button.urgent {
-    background-color: #ff5555;
+    background-color: #ff5555;  /* Czerwony Dracula */
     color: #f8f8f2;
 }
+
+/* --- Pozostałe moduły --- */
 
 #temperature {
     color: #ff79c6;
     font-weight: bold;
+    margin-right: 8px;
 }
 
 #clock {
