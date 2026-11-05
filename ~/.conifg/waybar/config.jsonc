@@ -1,12 +1,14 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 26,
+    "height": 28,
 
     "modules-left": ["ext/workspaces", "mango/layout", "mango/window"],
     "modules-center": ["clock"],
     "modules-right": [
         "temperature",
+	"network",
+	"custom/kernel",
         "memory"
     ],
 
@@ -24,6 +26,24 @@
         "critical-threshold": 80,
         "format": " {temperatureC}°C",
         "format-critical": " {temperatureC}°C"
+    },
+
+    "custom/kernel": {
+        "exec": "uname -r",
+        "interval": 3600,
+        "format": "󰌽 {}",
+        "tooltip": true,
+        "tooltip-format": "Kernel Linux: {}"
+    },
+
+    "network": {
+        "interface": "wlp*",
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": "󰤭 Brak internetu",
+        "tooltip-format-wifi": "Wi-Fi: {essid}\nIP: {ipaddr}",
+        "tooltip-format-ethernet": "Ethernet: {ifname}\nIP: {ipaddr}",
+        "interval": 5
     },
 
     "memory": {
