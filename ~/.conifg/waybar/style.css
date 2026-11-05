@@ -58,3 +58,23 @@ window#waybar {
     font-weight: bold;
     margin-right: 8px;
 }
+
+/* --- Kernel --- */
+
+#custom-kernel {
+    color: #bd93f9;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* --- Sieć --- */
+
+#network {
+    color: #8be9fd;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+#network.disconnected {
+    color: #ff5555;
+}
