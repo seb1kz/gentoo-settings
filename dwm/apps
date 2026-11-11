@@ -4,3 +4,5 @@ flameshot - screenshot
 alacritty - terminal
 ranger\thunar - file manager
 feh - wallpaper
+xrandr
+xinput
